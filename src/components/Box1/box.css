@@ -1,0 +1,71 @@
+.box1 {
+  width: 320px;
+  border: 2px solid black;
+  padding: 0% 5px;
+  margin: 2px;
+}
+.heading {
+  margin: 0%;
+  padding: 0%;
+}
+
+.logo {
+  height: 20px;
+  margin: 2px;
+}
+
+.last {
+  margin-left: 50px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 120%;
+}
+
+.social-media {
+  border: 1px solid black;
+  margin: 2% 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-media img {
+  padding: 1% 2%;
+  height: 25px;
+}
+
+.topics {
+  display: flex;
+}
+.topics p {
+  margin: 2px;
+  border: 2px solid black;
+  padding: 4px;
+  border-radius: 10%;
+}
+
+.contact p {
+  font-size: 120%;
+}
+small {
+  color: red;
+}
+
+.features {
+  display: flex;
+}
+
+.phone {
+  height: 40px;
+  padding: 2px;
+}
+
+.sub-contacts {
+  border: 2px solid black;
+  margin: 2%;
+}
+.sub-contacts img {
+  padding: 5px 10px;
+}

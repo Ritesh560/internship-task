@@ -1,0 +1,26 @@
+.box2 {
+  margin: 0%;
+  padding: 0%;
+  width: 800px;
+  border: 2px solid black;
+}
+.heading {
+  display: flex;
+}
+.left {
+  border: 1px solid black;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  position: relative;
+  left: 550px;
+  width: 100px;
+}
+
+#person {
+  padding: 5%;
+  padding-right: 10px;
+}
+#file {
+  padding: 5%;
+  padding-left: 15px;
+}
