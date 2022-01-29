@@ -37,11 +37,11 @@ function Box3() {
       </div>
       {(() => {
         if (show === "Activity") {
-          return <h1>Activity</h1>
+          return <h1 className="tabContent">Activity</h1>
         } else if (show === "Task") {
-          return <h1>Task</h1>
+          return <h1 className="tabContent">Task</h1>
         } else {
-          return <h1>Progress</h1>
+          return <h1 className="tabContent">Progress</h1>
         }
       })()}
     </div>

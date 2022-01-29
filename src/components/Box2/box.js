@@ -1,10 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 
 //styles
 import "./box.css"
 
-function Box2({ createTabs, state }) {
-  const { currentTab } = state
+function Box2({ tabs, handelRemoveTab }) {
+  const [activeTab, setActiveTab] = useState([tabs[0]])
+
   return (
     <div className="box2">
       <div className="heading">
@@ -15,16 +16,34 @@ function Box2({ createTabs, state }) {
         </div>
       </div>
 
-      {/* <div className="empty center">
-        <img className="logo board" src="Img/board.jpg" alt="Empty" />
-        <h3>Your workspace is empty!</h3>
-        <p>To add a tab, click on any option on your bottom left</p>
-      </div> */}
+      {tabs.length === 0 ? (
+        <div className="empty center">
+          <img className="logo board" src="Img/board.jpg" alt="Empty" />
+          <h3>Your workspace is empty!</h3>
+          <p>To add a tab, click on any option on your bottom left</p>
+        </div>
+      ) : (
+        <div className="TabContainer">
+          <div className="tabs">
+            {tabs.map((tab, i) => {
+              return (
+                <div className="tabbtn" onClick={() => setActiveTab(tab)}>
+                  {tab}
+                  <img
+                    src="Img/cut.png"
+                    alt="X"
+                    onClick={() => {
+                      handelRemoveTab(i)
+                    }}
+                  />
+                </div>
+              )
+            })}
+          </div>
 
-      <div className="tabs">
-        {createTabs()}
-        <p className="tab-content">{currentTab.content}</p>
-      </div>
+          <div className="tabContent">{activeTab}</div>
+        </div>
+      )}
     </div>
   )
 }

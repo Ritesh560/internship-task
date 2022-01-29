@@ -59,10 +59,10 @@ function Box1({ handleAddTab }) {
         <div className="features">
           <img className="logo phone" src="Img/call.png" alt="edit" />
           <div className="sub-contacts">
-            <img className="logo" src="Img/video-camera.png" alt="edit" onClick={() => handleAddTab()} />
-            <img className="logo" src="Img/calendar.png" alt="edit" onClick={() => handleAddTab()} />
-            <img className="logo" src="Img/email.png" alt="edit" onClick={() => handleAddTab()} />
-            <img className="logo" src="Img/message.png" alt="edit" onClick={() => handleAddTab()} />
+            <img className="logo" src="Img/video-camera.png" alt="edit" onClick={() => handleAddTab("video")} />
+            <img className="logo" src="Img/calendar.png" alt="edit" onClick={() => handleAddTab("calender")} />
+            <img className="logo" src="Img/email.png" alt="edit" onClick={() => handleAddTab("mail")} />
+            <img className="logo" src="Img/message.png" alt="edit" onClick={() => handleAddTab("chat")} />
           </div>
         </div>
       </div>

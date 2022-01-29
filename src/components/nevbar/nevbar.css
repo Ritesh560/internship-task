@@ -1,5 +1,6 @@
 .container {
   background-color: rgb(54, 45, 45);
+  position: fixed;
   overflow: hidden;
   margin: 0%;
   padding: 0%;
@@ -7,6 +8,7 @@
   position: relative;
   background-size: cover;
   margin-bottom: 50px;
+  z-index: 9999;
 }
 
 .navbar {
@@ -35,10 +37,12 @@ nav li {
 
 .search {
   margin: 0%;
-  margin-left: 450px;
+  margin-left: 350px;
   padding: 5px;
-  width: 300px;
+  width: 350px;
   border-radius: 5%;
+  color: white;
+  background-color: #203e46;
 }
 
 .profilepic {

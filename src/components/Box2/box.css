@@ -32,3 +32,33 @@
   height: 150px;
   margin: 0% 50px;
 }
+
+.tabs {
+  display: flex;
+}
+
+.tabbtn {
+  background-color: black;
+  color: hsl(0, 0%, 100%);
+  width: 170px;
+  height: 20px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.tabbtn img {
+  position: relative;
+  left: 90px;
+  height: 12px;
+}
+.active {
+  background-color: #6f8c94;
+}
+.tabContent {
+  font-size: 150%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 20px;
+}
