@@ -19,14 +19,14 @@ function Box3() {
         </button>
       </div>
       <div className="tasks">
-        <button className="btn2" id="activity" onClick={() => setShow("Activity")}>
+        <button className={`btn2 ${show == "Activity" ? "hover" : " "}`} id="activity" onClick={() => setShow("Activity")}>
           Activity
         </button>
-        <button className="btn2" id="task" onClick={() => setShow("Task")}>
+        <button className={`btn2 ${show == "Task" ? "hover" : " "}`} id="task" onClick={() => setShow("Task")}>
           Tasks
         </button>
         <button
-          className="btn2"
+          className={`btn2 ${show == "Progress" ? "hover" : " "}`}
           id="progress"
           onClick={() => {
             setShow("Progress")
@@ -37,19 +37,10 @@ function Box3() {
       </div>
       {(() => {
         if (show === "Activity") {
-          document.getElementById("activity").classList.add("hover")
-          document.getElementById("task").classList.remove("hover")
-          document.getElementById("progress").classList.remove("hover")
           return <h1>Activity</h1>
         } else if (show === "Task") {
-          document.getElementById("task").classList.add("hover")
-          document.getElementById("activity").classList.remove("hover")
-          document.getElementById("progress").classList.remove("hover")
           return <h1>Task</h1>
         } else {
-          document.getElementById("progress").classList.add("hover")
-          document.getElementById("task").classList.remove("hover")
-          document.getElementById("activity").classList.remove("hover")
           return <h1>Progress</h1>
         }
       })()}

@@ -6,6 +6,7 @@
   height: 100%;
   position: relative;
   background-size: cover;
+  margin-bottom: 50px;
 }
 
 .navbar {
@@ -45,4 +46,7 @@ nav li {
   padding: 0%;
   height: 40px;
   margin-left: 300px;
+}
+.tab {
+  height: 10px;
 }

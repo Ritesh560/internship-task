@@ -3,12 +3,12 @@ import React, { useEffect } from "react"
 //styles
 import "./box.css"
 
-function Box1() {
+function Box1({ handleAddTab }) {
   return (
     <>
       <div className="box1">
         <div className="about">
-          <div className="heading">
+          <div className="intro">
             <h3>
               Jean Samuel Najnudel <img className="logo last" src="Img/edit.png" alt="edit" /> <img className="logo" src="Img/shield.png" alt="edit" />{" "}
             </h3>
@@ -59,10 +59,10 @@ function Box1() {
         <div className="features">
           <img className="logo phone" src="Img/call.png" alt="edit" />
           <div className="sub-contacts">
-            <img className="logo" src="Img/video-camera.png" alt="edit" />
-            <img className="logo" src="Img/calendar.png" alt="edit" />
-            <img className="logo" src="Img/email.png" alt="edit" />
-            <img className="logo" src="Img/message.png" alt="edit" />
+            <img className="logo" src="Img/video-camera.png" alt="edit" onClick={() => handleAddTab()} />
+            <img className="logo" src="Img/calendar.png" alt="edit" onClick={() => handleAddTab()} />
+            <img className="logo" src="Img/email.png" alt="edit" onClick={() => handleAddTab()} />
+            <img className="logo" src="Img/message.png" alt="edit" onClick={() => handleAddTab()} />
           </div>
         </div>
       </div>

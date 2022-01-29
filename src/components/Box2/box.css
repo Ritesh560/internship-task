@@ -1,8 +1,7 @@
 .box2 {
   margin: 0%;
   padding: 0%;
-  width: 800px;
-  border: 2px solid black;
+  width: 90%;
 }
 .heading {
   display: flex;
@@ -12,15 +11,24 @@
   margin-top: 2%;
   margin-bottom: 1%;
   position: relative;
-  left: 550px;
+  margin-left: 500px;
+  margin-right: 50px;
   width: 100px;
 }
 
 #person {
-  padding: 5%;
+  padding: 7%;
   padding-right: 10px;
 }
 #file {
-  padding: 5%;
-  padding-left: 15px;
+  padding: 7%;
+  padding-left: 25px;
+}
+
+.empty {
+  margin: 25% 0;
+}
+.board {
+  height: 150px;
+  margin: 0% 50px;
 }
