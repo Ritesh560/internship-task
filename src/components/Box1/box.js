@@ -17,6 +17,8 @@ function Box1({ handleAddTab }) {
               Ringover | <img className="logo" src="Img/people.png" alt="edit" /> 101-250
             </h4>
             <a href="http://www.ringover.com">http://www.ringover.com</a>
+            <br />
+
             <div className="social-media">
               <img className="logo" src="Img/linkedin.png" alt="edit" />
               <img className="logo" src="Img/cloud.png" alt="edit" />

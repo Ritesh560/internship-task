@@ -17,6 +17,8 @@ function Nevbar() {
           </li>
           <li>
             <img src="Img/profilepic2.png" alt="#" className="profilepic" />
+            <img src="Img/arrow.png" alt="#" className="navlogo" />
+            <img src="Img/logout.png" alt="#" className="navlogo" />
           </li>
         </ul>
       </nav>
